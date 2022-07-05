@@ -1,3 +1,5 @@
+package db;
+
 import model.Student;
 
 import java.util.Arrays;
@@ -5,7 +7,6 @@ import java.util.Arrays;
 public class StudentDB {
 
     private Student[] allStudents;
-
     public StudentDB(Student[] allStudents) {
         this.allStudents = allStudents;
     }
@@ -24,6 +25,11 @@ public class StudentDB {
         this.allStudents = Arrays.stream(this.getAllStudents()).filter(student ->
                 student.getId() != studentIdToDelete).toArray(studentArray -> new Student[studentArray]);
         return(this.allStudents);
+    }
+
+    public void addStudent(Student student){
+        Arrays.copyOf(allStudents, (allStudents.length+1));
+        allStudents[allStudents.length]=student;
     }
 
     @Override
