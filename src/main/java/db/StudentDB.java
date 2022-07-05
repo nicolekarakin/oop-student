@@ -29,7 +29,7 @@ public class StudentDB {
     }
 
     public void addStudent(Student student){
-        Arrays.copyOf(allStudents, (allStudents.length+1));
+        allStudents=Arrays.copyOf(allStudents, (allStudents.length+1));
         allStudents[allStudents.length]=student;
     }
 
