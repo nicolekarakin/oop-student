@@ -1,7 +1,5 @@
 package model;
 
-import java.util.Objects;
-
 public class ComputerScienceStudent extends Student implements Citizen{
     private int identityCardNumber;
     private String favorieLanguage;
@@ -44,19 +42,19 @@ public class ComputerScienceStudent extends Student implements Citizen{
         this.favorieLanguage = favorieLanguage;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof ComputerScienceStudent)) return false;
-        if (!super.equals(o)) return false;
-        ComputerScienceStudent that = (ComputerScienceStudent) o;
-        return Objects.equals(favorieLanguage, that.favorieLanguage);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), favorieLanguage);
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof ComputerScienceStudent)) return false;
+//        if (!super.equals(o)) return false;
+//        ComputerScienceStudent that = (ComputerScienceStudent) o;
+//        return Objects.equals(favorieLanguage, that.favorieLanguage);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(super.hashCode(), favorieLanguage);
+//    }
 
     @Override
     public String toString() {
