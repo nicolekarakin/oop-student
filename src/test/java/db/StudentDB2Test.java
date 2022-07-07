@@ -72,7 +72,7 @@ class StudentDB2Test {
 
     private StudentDB2 createDb2(){
         List<String> keys=new ArrayList<>(Arrays.asList("Karl","Bob","Betty","Tina"));
-        Map<String,ArrayList<Student>> stMp=new HashMap<>();
+        Map<String,List<Student>> stMp=new HashMap<>();
         List<Student> studentDb = Arrays.asList(
                 new ComputerScienceStudent("Karl", "123"),
                 new ComputerScienceStudent("Tina", "345"),

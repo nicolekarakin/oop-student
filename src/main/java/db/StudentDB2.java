@@ -7,12 +7,12 @@ import java.util.stream.Collectors;
 
 public class StudentDB2 {
 
-    private Map<String, ArrayList<Student>> students;
-    public StudentDB2(Map<String, ArrayList<Student>> allStudents) {
+    private Map<String, List<Student>> students;
+    public StudentDB2(Map<String, List<Student>> allStudents) {
         students = allStudents;
     }
 
-    public Map<String,ArrayList<Student>> getStudents() {
+    public Map<String,List<Student>> getStudents() {
         return students;
     }
 
